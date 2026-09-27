@@ -11,29 +11,24 @@
 html,body{max-width:100%;overflow-x:hidden}
 h1,h2,p,li,a{overflow-wrap:anywhere}
 
-body { margin:0; background:#f6e7c1; color:#14110d; font:18px/1.4 ui-sans-serif, system-ui; }
-.stage { min-height:100vh; display:grid; place-items:center; padding:24px; }
-.ticket { width:min(560px, 100%); background:#14110d; color:#f6e7c1; padding:28px; border-radius:18px 18px 8px 8px; }
-hr { border:0; border-top:2px dashed #e7b008; margin:16px 0; }
-h1 { font-size:40px; margin:8px 0; }
-h2 { font-size:22px; font-weight:600; }
-.cta { display:inline-block; margin-top:12px; background:#e7b008; color:#f6e7c1; text-decoration:none; padding:12px 14px; border-radius:999px; }
-.notes { padding:8px 24px 32px; }
+body { margin:0; background:#f8fafc; color:#0f1720; font:20px/1.4 "Avenir Next", "Segoe UI", sans-serif; }
+.poster { min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding:28px; box-sizing:border-box; }
+.mark { letter-spacing:.22em; text-transform:uppercase; font-size:12px; color:#f8fafc; }
+h1 { font-size:clamp(46px, 8vw, 92px); line-height:.9; max-width:14ch; margin:12px 0; }
+.poster p:last-of-type { max-width:36rem; color:#0f1720; }
+.cta { align-self:flex-start; color:#f8fafc; background:#f8fafc; text-decoration:none; padding:14px 18px; margin:18px 0 8px; }
+#scope { background:#0f1720; color:#f8fafc; padding:28px; }
 
 </style>
 </head>
 <body>
 
-<main class="stage">
-  <section class="ticket">
-    <p>Lab</p>
-    <h1>commos</h1>
-    <hr />
-    <h2>Every channel. One policy core.</h2>
-    <p class="lede">CommOS is a self-hosted communications control plane: SMS, iMessage, email, and voice go through connectors, then a policy engine decides allow, approve, or block. It is infrastructure for builders — not a finished customer messaging product.</p>
-    <a class="cta" href="#scope">Open the stub</a>
-  </section>
+<main class="poster">
+  <p class="mark">commos · Lab</p>
+  <h1>Every channel. One policy core.</h1>
+  <p>CommOS is a self-hosted communications control plane: SMS, iMessage, email, and voice go through connectors, then a policy engine decides allow, approve, or block. It is infrastructure for builders — not a finished customer messaging product.</p>
+  <a class="cta" href="#scope">See the boundary</a>
 </main>
-<section id="scope" class="notes"><ol><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ol></section>
+<section id="scope"><h2>Boundary</h2><ol><li>The page describes the current work. It does not invent customers.</li><li>A live signup, price, or metric appears here only when the product has one.</li><li>Maturity on this page is a label, not a launch claim.</li></ol></section>
 </body>
 </html>
