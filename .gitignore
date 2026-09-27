@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.next/
+sdk/node_modules/
+sdk/dist/
+
+# Runtime data (SQLite DB, generated keys, attachments) — never commit
+data/
+*.db
+*.db-wal
+*.db-shm
+secrets.key
+
+# Logs
+*.log
+logs/
+
+# Env — keep secrets out of source control; .env.example is the template
+.env
+.env.local
+.env*.local
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Packages shipped by other tools
+*.tsbuildinfo
+next-env.d.ts
