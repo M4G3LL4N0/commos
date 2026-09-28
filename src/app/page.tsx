@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "CommOS — communications control plane",
+  description:
+    "Self-hosted communications control plane: iMessage, SMS, voice, and email through connectors and a policy engine. Not a finished customer product.",
+};
 
 const BLOCKS = [
   {
@@ -75,6 +82,28 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+
+        <section
+          aria-label="Policy path"
+          className="mx-auto mt-16 max-w-3xl rounded-2xl border border-slate-800 bg-slate-900/40 p-5"
+        >
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">
+            Policy path — product map
+          </p>
+          <div className="mt-4 grid gap-2 sm:grid-cols-4">
+            {[
+              ["Channels", "SMS · iMessage · email · voice"],
+              ["Connectors", "Health-checked before send"],
+              ["Policy core", "Allow · approve · block"],
+              ["Delivery", "Signed webhooks + receipts"],
+            ].map(([title, body]) => (
+              <article key={title} className="rounded-xl border border-slate-800 px-3 py-3 text-left">
+                <h2 className="text-sm font-semibold text-slate-100">{title}</h2>
+                <p className="mt-1 text-xs leading-5 text-slate-400">{body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <div className="mt-20 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {BLOCKS.map((b) => (
