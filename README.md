@@ -1,42 +1,37 @@
 # Commos
 
-> **STATUS: UNDOCUMENTED** — this README was generated from the repository's own contents. It records what is present, not what the project intends to become.
+**STATUS: EXPERIMENTAL**
 
-## Purpose
+commos. build via `package.json`.
 
-Repository contents indicate: TypeScript.
+## Why it exists
 
-## What is in this repository
+> Repository contents indicate: TypeScript.
 
-Files present at the repository root:
+## What is in it
 
-- `.env.example`
-- `next.config.mjs`
-- `package.json`
-- `pnpm-lock.yaml`
-- `pnpm-workspace.yaml`
-- `postcss.config.mjs`
-- `public`
-- `public-site`
-- `src`
-- `tailwind.config.ts`
-- `tsconfig.json`
-
-## Engineering status
-
-| property | value |
+| | |
 | --- | --- |
-| Primary language | TypeScript |
-| License | not recorded |
-| Last push | 2026-09-28 |
-| Topics | none set |
-| Test suite | not established — no test evidence has been measured |
-| CI | not established — no CI evidence has been measured |
+| Source files | 31 |
+| Test files | 0 |
+| Documentation files | 4 |
+| CI workflows | 0 |
+| Build manifest | package.json |
 
-Nothing in this table is inferred. Where a value could not be read from the repository it says so.
+Observed: 31 source file(s); build via `package.json`.
 
-Homepage: <https://commos-website.vercel.app>
+## Build and run
 
-## Notes
+```bash
+pnpm install
+pnpm build
+pnpm test
+```
 
-This repository predates the current documentation standard. The README above is intentionally minimal and factual rather than promotional: it would be easy to write an impressive description here, and nothing in this repository would make it true.
+## Evidence
+
+Counts above are counted from the repository tree, not asserted. Where a value could not be measured it is omitted rather than estimated.
+
+---
+
+Part of the DUNG30N5 × NOAERTH portfolio. Repository: [`M4G3LL4N0/commos`](https://github.com/M4G3LL4N0/commos).
